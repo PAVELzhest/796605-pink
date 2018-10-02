@@ -10,7 +10,7 @@
         <a href="index.html" aria-label="Перейти на главную страницу" class="logo">
           Pink
         </a>
-        <button class="nav-buttom__close" type="button">Закрыть</button>
+        <button class="buttom-close" type="button">Закрыть</button>
       </div>
       <nav class="nav-navigation">
         <ul class="nav-navigation__list site-list">
@@ -30,55 +30,69 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="photo">
-        <h1 class="photo__title">Фотографии пользователей</h1>
+      <section class="page-title">
+        <h1 class="page-title__description">Фотографии пользователей</h1>
       </section>
       <section class="album">
-        <p class="album__desc">
+        <p class="album__description">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
-        <ul class="album__list">
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Анна<span class="album__time">(5 минут назад)</span></p>
-            <p class="album__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 215</p>
+        <ul class="album-list">
+          <li class="album-item">
+            <div class="album-item__photo--panorama">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Анна<span class="album-item__time">(5 минут назад)</span></p>
+            <p class="album-item__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 215</p>
           </li>
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Левон<span class="album__time">(5 часов назад)</span></p>
-            <p class="album__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 356</p>
+          <li class="album-item">
+            <div class="album-item__photo">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Левон<span class="album-item__time">(5 часов назад)</span></p>
+            <p class="album-item__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 356</p>
           </li>
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Антон<span class="album__time">(12 часов назад)</span></p>
-            <p class="album__description">Соседи будут рады!</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 666</p>
+          <li class="album-item">
+            <div class="album-item__photo">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Антон<span class="album-item__time">(12 часов назад)</span></p>
+            <p class="album-item__description">Соседи будут рады!</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 666</p>
           </li>
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Борис<span class="album__time">(20 часов назад)</span></p>
-            <p class="album__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 215</p>
+          <li class="album-item">
+            <div class="album-item__photo">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Борис<span class="album-item__time">(20 часов назад)</span></p>
+            <p class="album-item__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 215</p>
           </li>
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Сергей<span class="album__time">(25 часов назад)</span></p>
-            <p class="album__description">Самая кубанская в мире!</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 4</p>
+          <li class="album-item">
+            <div class="album-item__photo">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Сергей<span class="album-item__time">(25 часов назад)</span></p>
+            <p class="album-item__description">Самая кубанская в мире!</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 4</p>
           </li>
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Максим<span class="album__time">(40 часов назад)</span></p>
-            <p class="album__description">Где снег-то?</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 150</p>
+          <li class="album-item">
+            <div class="album-item__photo">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Максим<span class="album-item__time">(40 часов назад)</span></p>
+            <p class="album-item__description">Где снег-то?</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 150</p>
           </li>
-          <li class="album__item">
-            <img src="http://placehold.it/150x100">
-            <p class="album__name">Надежда<span class="album__time">(45 часов назад)</span></p>
-            <p class="album__description">Всем GM и взаимные лайки!</p>
-            <p class="album__liked"><span class="album__liked--button"></span>Нравится: 2560</p>
+          <li class="album-item">
+            <div class="album-item__photo">
+              <img src="http://placehold.it/150x100">
+            </div>
+            <p class="album-item__name">Надежда<span class="album-item__time">(45 часов назад)</span></p>
+            <p class="album-item__description">Всем GM и взаимные лайки!</p>
+            <p class="album-item__liked"><span class="album-item__liked--button"></span>Нравится: 2560</p>
           </li>
         </ul>
       </section>
@@ -93,27 +107,19 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social-button" href="#" aria-label="Twitter">
-                Twitter
-              </a>
+              <a class="social-button button-network" href="#" aria-label="Twitter"></a>
             </li>
             <li class="social__item">
-              <a class="social-button" href="#" aria-label="Facebook">
-                Facebook
-              </a>
+              <a class="social-button button-network" href="#" aria-label="Facebook"></a>
             </li>
             <li class="social__item">
-              <a class="social-button" href="#" aria-label="YouTube">
-                YouTube
-              </a>
+              <a class="social-button button-network" href="#" aria-label="YouTube"></a>
             </li>
           </ul>
         </div>
-        <div class="academy-wrapper">
-          <p class="academy__description">Разработано</p>
-          <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2">
-          HTML Academy
-          </a>
+        <div class="copyright">
+          <p class="copyright__description">Разработано</p>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2"></a>
         </div>
       </footer>
   </body>
