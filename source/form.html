@@ -10,7 +10,7 @@
         <a href="index.html" aria-label="Перейти на главную страницу" class="logo">
           Pink
         </a>
-        <button class="buttom-close" type="button">Закрыть</button>
+        <button class="button-close" type="button">Закрыть</button>
       </div>
       <nav class="nav-navigation">
         <ul class="nav-navigation__list site-list">
@@ -32,6 +32,129 @@
     <main class="main-container">
       <section class="page-title">
         <h1 class="page-title__description">Конкурс на самое безбашенное путешевствие с Пинк</h1>
+      </section>
+      <section class="form">
+        <form class="form-group" method="get" action="#">
+          <p class="form-desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <fieldset class="user-name">
+            <ul class="user-list">
+              <li class="user">
+                <label class="user__label" for="surname">
+                  Фамилия:
+                </label>
+                <input class="user__input--surname" type="text" name="surname" id="surname" value="Укажите фамилию ⚹" required>
+              </li>
+              <li class="user">
+                <label class="user__label" for="name">
+                  Имя:
+                </label>
+                <input class="user__input--name" type="text" name="name" id="name" value="Введите ваше имя ⚹" required>
+              </li>
+              <li class="user">
+                <label class="user__label" for="patronymic">
+                  Отчество:
+                </label>
+                <input class="user__input--patronymic" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feature">
+            <legend class="feature-desc">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <input class="checkbox visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
+                <label class="feature-item__label" for="selfie">
+                  Сделал селфи с акулой
+                </label>
+              </li>
+              <li class="feature-item">
+                <input class="checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
+                <label class="feature-item__label" for="beach">
+                  Обгорел на пляже
+                </label>
+              </li>
+              <li class="feature-item">
+                <input class="checkbox visually-hidden" type="checkbox" name="see" id="see">
+                <label class="feature-item__label" for="see">
+                  Видел Чака Норриса
+                </label>
+              </li>
+              <li class="feature-item">
+                <input class="checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+                <label class="feature-item__label" for="souvenir">
+                  Накупил сувениров
+                </label>
+              </li>
+              <li class="feature-item">
+                <input class="checkbox visually-hidden" type="checkbox" name="turret" id="turret" checked>
+                <label class="feature-item__label" for="turret">
+                  Удержал башню
+                </label>
+              </li>
+              <li class="feature-item">
+                <input class="checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+                <label class="feature-item__label" for="hotel">
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contacts">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <label class="contacts-item__label" for="tel">
+                  Номер телефона
+                </label>
+                <input class="contacts-item__tel" type="tel" name="" id="tel" value="Номер, пожалуйста">
+              </li>
+              <li class="contacts-item">
+                <label class="contacts-item__label" for="email">
+                  Адрес почты
+                </label>
+                <input class="contacts-item__email" type="email" name="" id="email" value="Введите почту ⚹" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="choice">
+            <legend class="choice-desc">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="choice-list">
+              <li class="choice-item">
+               <label class="radio">
+                  <input class="radio-button visually-hidden" type="radio" name="choice" value="Pink для iOS" checked>
+                  Pink для iOS
+               </label>
+              </li>
+              <li class="choice-item">
+               <label class="radio">
+                  <input class="radio-button visually-hidden" type="radio" name="choice" value="Pink на Android">
+                  Pink на Android
+               </label>
+              </li>
+              <li class="choice-item">
+               <label class="radio">
+                  <input class="radio-button visually-hidden" type="radio" name="choice" value="Windows Phone">
+                  Windows Phone
+               </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comments">
+            <legend class="comments-desc">
+              Опишите свои эмоции
+            </legend>
+            <div class="comment-wrapper">
+              <textarea class="comment" name="comment" id="comment-field" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить форму</button>
+            <p class="importantly">
+              ⚹ — обязательные поля
+            </p>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer class="footer">
@@ -55,7 +178,7 @@
           </ul>
         </div>
         <div class="copyright">
-          <p class="copyright__description">Разработано</p>
+          <p class="copyright__desc">Разработано</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2"></a>
         </div>
       </footer>
