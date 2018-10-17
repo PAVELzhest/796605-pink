@@ -1,45 +1,39 @@
-.photo {
+.photo-panorama__img {
+  width: 320px;
+  height: 137px;
+  margin: 0;
+  padding: 0;
+}
+.panorama {
   margin: 0 20px 20px;
+  padding: 15px  20px 15px;
   text-align: left;
   background-color: @bg-lightgrey;
-
-  div {
-    max-height: 180px;
-  }
-
   &__name {
-    margin-bottom: 0;
-    padding-left: 20px;
+    margin: 0;
     font-weight: bold;
   }
-
   &__time {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
     opacity: 0.7;
   }
-
   &__desc {
     margin: 0;
-    padding: 0 20px;
   }
-
   &__liked {
     margin-bottom: 0;
-    padding-bottom: 15px;
-    padding-left: 20px;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
     color: #d22856;
-
     &--button {
       display: inline-block;
       margin-right: 18px;
       width: 13px;
       height: 12px;
-      vertical-align: middle;
+      vertical-align:middle;
       background-image: url(../img/icon-heart.svg);
       background-repeat: no-repeat;
     }
