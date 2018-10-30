@@ -13,3 +13,22 @@
   border: none;
   background-color: @bg-darkgrey;
 }
+
+@media (min-width: @tablet-width) {
+  .logo-header {
+    padding: 29px 20px 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-header {
+    width: 405px;
+    padding: 26px 0 36px;
+    justify-content: center;
+    border: none;
+  }
+
+  .logo-header__button-close {
+    display: none;
+  }
+}

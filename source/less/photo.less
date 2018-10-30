@@ -1,47 +1,93 @@
 .photo {
-  margin: 0 20px 20px;
-  text-align: left;
-  background-color: @bg-lightgrey;
+	margin: 0 20px 20px;
+	text-align: left;
+	background-color: @bg-lightgrey;
 }
 
 .photo__wrapper {
-  max-height: 180px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .photo__name {
-  margin-bottom: 0;
-  padding-left: 20px;
-  font-weight: bold;
+	margin-bottom: 0;
+	padding-left: 20px;
+	font-weight: bold;
 }
 
 .photo__time {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 400;
-  opacity: 0.7;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	opacity: 0.7;
 }
 
 .photo__desc {
-  margin: 0;
-  padding: 0 20px;
+	margin: 0;
+	padding: 0 20px;
 }
 
 .photo__liked {
-  margin-bottom: 0;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 400;
-  color: #d22856;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	color: #d22856;
 }
 
 .photo__liked--button {
-  display: inline-block;
-  margin-right: 18px;
-  width: 13px;
-  height: 12px;
-  vertical-align: middle;
-  background-image: url (../img/icon-heart.svg);
-  background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 18px;
+	width: 13px;
+	height: 12px;
+	vertical-align: middle;
+	background-image: url(../img/icon-heart.svg);
+	background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+	.photo {
+		position: relative;
+		width: 300px;
+		min-height: 455px;
+		margin: 10px;
+	}
+
+	.photo__name {
+		margin-top: 17px;
+		padding-left: 27px;
+	}
+
+	.photo__desc {
+		margin: 0;
+		padding: 0 27px;
+	}
+
+	.photo__liked {
+		position: absolute;
+		width: 258px;
+		margin: 0;
+		padding: 0 15px 0 27px;
+		left: 0;
+		top: 410px;
+	}
+
+	.photo__liked--button {
+		float: right;
+		margin-top: 4px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.photo {
+		min-height: 555px;
+		margin: 27px 10px;
+	}
+
+	.photo__liked {
+		top: 510px;
+	}
 }

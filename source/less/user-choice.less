@@ -1,12 +1,42 @@
 .user-choice {
+  position: relative;
   margin: 0;
-  padding: 40px 20px 0;
+  padding: 114px 20px 0;
   background-color: @bg-lightgrey;
   border: none;
 }
 
 .user-choice__desc {
-  margin: 0 25px 40px;
+  position: absolute;
+  top: 40px;
+  left: 64px;
+  width: 180px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .user-choice {
+    width: 100%;
+    margin: 0 20px 57px;
+    padding: 49px 0 13px;
+    order: -3;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+  }
+
+  .user-choice__desc {
+    position: static;
+    width: 320px;
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-choice {
+    width: 435px;
+    margin: 0 35px 57px;
+  }
 }

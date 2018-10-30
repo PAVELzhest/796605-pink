@@ -1,3 +1,13 @@
 .main-header {
   background: @bg-darkgrey;
 }
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}

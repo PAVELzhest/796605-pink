@@ -1,149 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="utf-8">
-  <title>Фотографии</title>
-  <link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Фотографии</title>
+	<link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <header class="main-header">
-    <div class="logo-header">
-      <a href="index.html" aria-label="Перейти на главную страницу" class="logo-header__pink">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
-      </a>
-      <button class="logo-header__button-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="23.9" height="23.9">
-          <path fill="#FFF" d="M15 12l8.6-8.6c.3-.3.3-.8 0-1l-2-2.2a.7.7 0 0 0-1.1 0l-8.6 8.6L3.4.2a.8.8 0 0 0-1 0L.1 2.3c-.3.3-.3.8 0 1L8.8 12 .2 20.5c-.3.3-.3.8 0 1l2.1 2.1a.7.7 0 0 0 1 0l8.6-8.5 8.6 8.5a.7.7 0 0 0 1 0l2.1-2c.3-.3.3-.8 0-1.1l-8.5-8.6z" />
-        </svg>
-      </button>
-    </div>
-    <nav class="nav-navigation">
-      <ul class="nav-navigation__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-container">
-    <section class="page-title">
-      <h1 class="page-title__desc">Фотографии пользователей</h1>
-    </section>
-    <section class="album">
-      <p class="album__desc">
-        Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как не&nbsp;хватает ваших?
-      </p>
-      <ul class="photos">
-        <li class="photo-panorama">
-          <div class="photo-panorama__img">
-            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-          </div>
-          <div class="panorama">
-            <p class="panorama__name">Анна <span class="panorama__time">(5 минут назад)</span></p>
-            <p class="panorama__desc">Прыгать или нет? Напишите&nbsp;в коментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
-            <p class="panorama__liked"><span class="panorama__liked--button"></span>Нравится: 215</p>
-          </div>
-        </li>
-        <li class="photo">
-          <div class="photo__wrapper">
-            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото автомобиля">
-          </div>
-          <p class="photo__name">Левон <span class="photo__time">(5 часов назад)</span></p>
-          <p class="photo__desc">Вчера он&nbsp;на&nbsp;луну летал, сегодня&nbsp;в руки к&nbsp;нам попал.</p>
-          <p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 356</p>
-        </li>
-        <li class="photo">
-          <div class="photo__wrapper">
-            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
-          </div>
-          <p class="photo__name">Антон <span class="photo__time">(12 часов назад)</span></p>
-          <p class="photo__desc">Соседи будут рады!</p>
-          <p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 666</p>
-        </li>
-        <li class="photo">
-          <div class="photo__wrapper">
-            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Вид через панорамную крышу">
-          </div>
-          <p class="photo__name">Борис <span class="photo__time">(20 часов назад)</span></p>
-          <p class="photo__desc">Здесь могла быть ваша цитата&nbsp;о высоком и&nbsp;вечном.</p>
-          <p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 215</p>
-        </li>
-        <li class="photo">
-          <div class="photo__wrapper">
-            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
-          </div>
-          <p class="photo__name">Сергей <span class="photo__time">(25 часов назад)</span></p>
-          <p class="photo__desc">Самая кубанская в&nbsp;мире!</p>
-          <p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 4</p>
-        </li>
-        <li class="photo">
-          <div class="photo__wrapper">
-            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото на вершине горы">
-          </div>
-          <p class="photo__name">Максим <span class="photo__time">(40 часов назад)</span></p>
-          <p class="photo__desc">Где снег-то?</p>
-          <p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 150</p>
-        </li>
-        <li class="photo">
-          <div class="photo__wrapper">
-            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид на крыло самолета через иллюминатор">
-          </div>
-          <p class="photo__name">Надежда <span class="photo__time">(45 часов назад)</span></p>
-          <p class="photo__desc">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
-          <p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 2560</p>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-container">
-      <a href="index.html" class="footer-container__logo">
-        <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Логотип Pink">
-      </a>
-    </div>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__twitter button-network" href="#" aria-label="Twitter">
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" />
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__facebook button-network" href="#" aria-label="Facebook">
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944">
-              <path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z" />
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__youtube button-network" href="#" aria-label="YouTube">
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96">
-              <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <p class="copyright__desc">Разработано</p>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2">
-        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.9" height="34.1">
-          <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8L25 13.5l-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z" />
-        </svg>
-      </a>
-    </div>
-  </footer>
+	<header class="main-header">
+		<div class="logo-header">
+			<a href="index.html" aria-label="Перейти на главную страницу" class="logo-header__pink">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+					<source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+					<img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+				</picture>
+			</a>
+			<button class="logo-header__button-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+				<svg version="1" xmlns="http://www.w3.org/2000/svg" width="23.9" height="23.9">
+					<path fill="#FFF" d="M15 12l8.6-8.6c.3-.3.3-.8 0-1l-2-2.2a.7.7 0 0 0-1.1 0l-8.6 8.6L3.4.2a.8.8 0 0 0-1 0L.1 2.3c-.3.3-.3.8 0 1L8.8 12 .2 20.5c-.3.3-.3.8 0 1l2.1 2.1a.7.7 0 0 0 1 0l8.6-8.5 8.6 8.5a.7.7 0 0 0 1 0l2.1-2c.3-.3.3-.8 0-1.1l-8.5-8.6z" />
+				</svg>
+			</button>
+		</div>
+		<nav class="nav-navigation">
+			<ul class="nav-navigation__list site-list">
+				<li class="site-list__item">
+					<a class="site-list__link" href="index.html">Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a class="site-list__link" href="#">Фотографии</a>
+				</li>
+				<li class="site-list__item">
+					<a class="site-list__link" href="form.html">Конкурс</a>
+				</li>
+				<li class="site-list__item">
+					<a class="site-list__link" href="#">HTML Academy</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main-container">
+		<section class="page-title">
+			<h1 class="page-title__desc">Фотографии пользователей</h1>
+		</section>
+		<section class="album">
+			<p class="album__desc">
+				Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как не&nbsp;хватает ваших?
+			</p>
+			<ul class="photos">
+				<li class="photo-panorama">
+					<div class="photo-panorama__img">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+							<img class="photo-panorama__img--item" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+						</picture>
+					</div>
+					<div class="panorama">
+						<p class="panorama__name">Анна <span class="panorama__time">(5 минут назад)</span></p>
+						<p class="panorama__desc">Прыгать или нет? Напишите&nbsp;в коментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
+						<p class="panorama__liked"><span class="panorama__liked--button"></span>Нравится: 215</p>
+					</div>
+				</li>
+				<li class="photo">
+					<div class="photo__wrapper">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+							<img src="img/photo-car-mobile@1x.jpg" alt="Фото автомобиля">
+						</picture>
+					</div>
+					<p class="photo__name">Левон <span class="photo__time">(5 часов назад)</span></p>
+					<p class="photo__desc">Вчера он&nbsp;на&nbsp;луну летал, сегодня&nbsp;в руки к&nbsp;нам попал.</p>
+					<p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 356</p>
+				</li>
+				<li class="photo">
+					<div class="photo__wrapper">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+							<img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+						</picture>
+					</div>
+					<p class="photo__name">Антон <span class="photo__time">(12 часов назад)</span></p>
+					<p class="photo__desc">Соседи будут рады!</p>
+					<p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 666</p>
+				</li>
+				<li class="photo">
+					<div class="photo__wrapper">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+							<img src="img/photo-window-mobile@1x.jpg" alt="Вид через панорамную крышу">
+						</picture>
+					</div>
+					<p class="photo__name">Борис <span class="photo__time">(20 часов назад)</span></p>
+					<p class="photo__desc">Здесь могла быть ваша цитата&nbsp;о высоком и&nbsp;вечном.</p>
+					<p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 215</p>
+				</li>
+				<li class="photo">
+					<div class="photo__wrapper">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+							<img src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
+						</picture>
+					</div>
+					<p class="photo__name">Сергей <span class="photo__time">(25 часов назад)</span></p>
+					<p class="photo__desc">Самая кубанская в&nbsp;мире!</p>
+					<p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 4</p>
+				</li>
+				<li class="photo">
+					<div class="photo__wrapper">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+							<img src="img/photo-pov-mobile@1x.jpg" alt="Фото на вершине горы">
+						</picture>
+					</div>
+					<p class="photo__name">Максим <span class="photo__time">(40 часов назад)</span></p>
+					<p class="photo__desc">Где снег-то?</p>
+					<p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 150</p>
+				</li>
+				<li class="photo">
+					<div class="photo__wrapper">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+							<source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+							<img src="img/photo-wing-mobile@1x.jpg" alt="Вид на крыло самолета через иллюминатор">
+						</picture>
+					</div>
+					<p class="photo__name">Надежда <span class="photo__time">(45 часов назад)</span></p>
+					<p class="photo__desc">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
+					<p class="photo__liked"><span class="photo__liked--button"></span>Нравится: 2560</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-container">
+			<a href="index.html" class="footer-container__logo">
+<picture>
+	<source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+	<img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+</picture>
+			</a>
+		</div>
+		<div class="social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__twitter button-network" href="#" aria-label="Twitter">
+						<svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" />
+						</svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a class="social__facebook button-network" href="#" aria-label="Facebook">
+						<svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944">
+							<path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z" />
+						</svg>
+					</a>
+				</li>
+				<li class="social__item">
+					<a class="social__youtube button-network" href="#" aria-label="YouTube">
+						<svg version="1" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96">
+							<path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p class="copyright__desc">Разработано</p>
+			<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2">
+				<svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.9" height="34.1">
+					<path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8L25 13.5l-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z" />
+				</svg>
+			</a>
+		</div>
+	</footer>
 </body>
+
 </html>
