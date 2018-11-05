@@ -1,6 +1,6 @@
 .panorama {
   margin: 0 20px 20px;
-  padding: 15px 20px 15px;
+  padding: 15px 20px;
   text-align: left;
   background-color: @bg-lightgrey;
 }
@@ -35,6 +35,47 @@
   width: 13px;
   height: 12px;
   vertical-align: middle;
-  background-image: url (../img/icon-heart.svg);
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .panorama {
+    display: flex;
+    flex-wrap: wrap;
+    width: 564px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 28px 23px;
+  }
+
+  .panorama__name {
+    order: -2;
+  }
+
+  .panorama__liked {
+    order: -1;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .panorama__liked--button {
+    float: right;
+    margin-top: 4px;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .panorama {
+    width: 884px;
+    margin-bottom: 23px;
+    padding: 25px 28px 22px;
+  }
+
+  .panorama__liked {
+    margin-right: 3px;
+  }
 }

@@ -5,7 +5,9 @@
 }
 
 .photo__wrapper {
-  max-height: 180px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .photo__name {
@@ -42,6 +44,50 @@
   width: 13px;
   height: 12px;
   vertical-align: middle;
-  background-image: url (../img/icon-heart.svg);
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    position: relative;
+    width: 300px;
+    min-height: 455px;
+    margin: 10px;
+  }
+
+  .photo__name {
+    margin-top: 17px;
+    padding-left: 27px;
+  }
+
+  .photo__desc {
+    margin: 0;
+    padding: 0 27px;
+  }
+
+  .photo__liked {
+    position: absolute;
+    width: 258px;
+    margin: 0;
+    padding: 0 15px 0 27px;
+    left: 0;
+    top: 410px;
+  }
+
+  .photo__liked--button {
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    min-height: 555px;
+    margin: 27px 10px;
+  }
+
+  .photo__liked {
+    top: 510px;
+  }
 }

@@ -1,6 +1,6 @@
 .user__label {
   display: block;
-  margin: 24px 0 10px 20px;
+  margin: 20px 0 7px 22px;
   text-align: left;
   text-transform: uppercase;
   color: #d22856;
@@ -8,10 +8,26 @@
 
 .user__control {
   width: 254px;
-  padding: 14px 0 14px 20px;
+  padding: 15px 0 15px 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-  border: 3px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .user {
+    display: flex;
+  }
+
+  .user__label {
+    margin: 22px 22px 0 0;
+  }
+
+  .user__control {
+    width: 100%;
+    margin-bottom: 51px;
+  }
 }
