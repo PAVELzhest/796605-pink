@@ -1,28 +1,32 @@
 .social__list {
-  list-style: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+	list-style: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (min-width: @tablet-width) {
-  .social {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.social {
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  .social__list {
-    justify-content: flex-start;
-  }
+	.social__list {
+		justify-content: flex-start;
+	}
 }
 
 @media (min-width: @desktop-width) {
-  .social__list {
-    justify-content: center;
-  }
+	.social {
+		width: 180px;
+	}
+
+	.social__list {
+		justify-content: space-between;
+	}
 }
