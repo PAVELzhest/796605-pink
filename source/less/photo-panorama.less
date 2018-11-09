@@ -1,12 +1,31 @@
 .photo-panorama__img {
 	margin: 0 0 -7px 0;
 	padding: 0;
+	position: relative;
 	text-align: center;
+}
+
+.photo-panorama__label {
+	margin: 0;
+	padding: 6px 20px 6px 19px;
+	position: absolute;
+	left: 160px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #d22856;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
 }
 
 @media (min-width: @tablet-width) {
 	.photo-panorama {
 		width: 100%;
+	}
+	
+	.photo-panorama__label {
+		left: 500px;
+		top: 57px;
 	}
 
 	.photo-panorama__img--item {
@@ -16,6 +35,11 @@
 }
 
 @media (min-width: @desktop-width) {
+	.photo-panorama__label {
+		left: 930px;
+		top: 54px;
+	}
+	
 	.photo-panorama__img--item {
 		height: 506px;
 	}
