@@ -1,18 +1,29 @@
 .photo {
+  min-height: 300px;
   margin: 0 20px 20px;
   text-align: left;
   background-color: @bg-lightgrey;
 }
 
 .photo__wrapper {
-  margin: 0;
+  margin: 0 0 -6px 0;
   padding: 0;
   text-align: center;
 }
 
+.photo:nth-child(2) .photo__wrapper {
+  margin-bottom: -7px;
+}
+
+.photo:nth-child(5) .photo__name {
+  padding-top: 19px;
+}
+
 .photo__name {
+  margin-top: 0;
   margin-bottom: 0;
-  padding-left: 20px;
+  padding-top: 18.5px;
+  padding-left: 18px;
   font-weight: bold;
 }
 
@@ -24,14 +35,14 @@
 }
 
 .photo__desc {
-  margin: 0;
-  padding: 0 20px;
+  margin: 0 0 8px 0;
+  padding: 0 18px;
 }
 
 .photo__liked {
-  margin-bottom: 0;
-  padding-bottom: 15px;
-  padding-left: 20px;
+  margin: 0;
+  padding-left: 18px;
+  padding-bottom: 20px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 400;
@@ -40,7 +51,7 @@
 
 .photo__liked--button {
   display: inline-block;
-  margin-right: 18px;
+  margin-right: 20px;
   width: 13px;
   height: 12px;
   vertical-align: middle;
@@ -52,13 +63,19 @@
   .photo {
     position: relative;
     width: 300px;
-    min-height: 455px;
+    min-height: 410px;
     margin: 10px;
+    padding-bottom: 45px;
   }
 
   .photo__name {
-    margin-top: 17px;
+    margin-top: 0;
     padding-left: 27px;
+    padding-top: 24px;
+  }
+
+  .photo:nth-child(5) .photo__name {
+    padding-top: 24px;
   }
 
   .photo__desc {
@@ -70,24 +87,27 @@
     position: absolute;
     width: 258px;
     margin: 0;
-    padding: 0 15px 0 27px;
+    padding: 0 15px 21px 27px;
     left: 0;
-    top: 410px;
+    bottom: 0;
   }
 
   .photo__liked--button {
     float: right;
     margin-top: 4px;
+    margin-right: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo {
-    min-height: 555px;
+    min-height: 510px;
     margin: 27px 10px;
   }
 
   .photo__liked {
-    top: 510px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }

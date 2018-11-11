@@ -1,213 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Конкурс</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="main-header__container">
-        <div class="logo-header">
-          <a href="index.html" aria-label="Перейти на главную страницу" class="logo-header__pink">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-            </picture>
-          </a>
-          <button class="logo-header__button-close" type="button">
-            <span class="visually-hidden">Закрыть</span>
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="23.9" height="23.9">
-              <path fill="#FFF" d="M15 12l8.6-8.6c.3-.3.3-.8 0-1l-2-2.2a.7.7 0 0 0-1.1 0l-8.6 8.6L3.4.2a.8.8 0 0 0-1 0L.1 2.3c-.3.3-.3.8 0 1L8.8 12 .2 20.5c-.3.3-.3.8 0 1l2.1 2.1a.7.7 0 0 0 1 0l8.6-8.5 8.6 8.5a.7.7 0 0 0 1 0l2.1-2c.3-.3.3-.8 0-1.1l-8.5-8.6z" />
-            </svg>
-          </button>
-        </div>
-        <nav class="nav-navigation">
-          <ul class="nav-navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <section class="page-title">
-        <h1 class="page-title__description">Конкурс на&nbsp;самое безбашенное путешевствие&nbsp;с&nbsp;Пинк</h1>
-      </section>
-    </header>
-    <main class="main-container">
-      <form class="form" method="get" action="https://echo.htmlacademy.ru">
-        <p class="form__desc">
-          Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="form__desc--item">Пожалуйста, заполните форму ниже:</span>
-        </p>
-        <fieldset class="form__user user-name">
-          <div class="user">
-            <label class="user__label" for="user-surname">
-              Фамилия:
-            </label>
-            <input class="user__control" type="text" name="surname" id="user-surname" value="Укажите фамилию *" required>
-          </div>
-          <div class="user">
-            <label class="user__label" for="user-name">
-              Имя:
-            </label>
-            <input class="user__control" type="text" name="name" id="user-name" value="Введите ваше имя *" required>
-          </div>
-          <div class="user">
-            <label class="user__label" for="user-patronymic">
-              Отчество:
-            </label>
-            <input class="user__control" type="text" name="patronymic" id="user-patronymic" value="Ну и отчество тоже">
-          </div>
-        </fieldset>
-        <fieldset class="form__feature user-feature">
-          <legend class="user-feature__desc">
-            Ваши безбашенные достижения в&nbsp;путешествии
-          </legend>
-          <ul class="user-feature__list">
-            <li class="checkbox">
-              <input class="checkbox__control visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
-              <label class="checkbox__label" for="selfie">
-                Сделал селфи с&nbsp;акулой
-              </label>
-            </li>
-            <li class="checkbox">
-              <input class="checkbox__control visually-hidden" type="checkbox" name="beach" id="beach" checked>
-              <label class="checkbox__label" for="beach">
-                Обгорел на&nbsp;пляже
-              </label>
-            </li>
-            <li class="checkbox">
-              <input class="checkbox__control visually-hidden" type="checkbox" name="see" id="see">
-              <label class="checkbox__label" for="see">
-                Видел Чака Норриса
-              </label>
-            </li>
-            <li class="checkbox">
-              <input class="checkbox__control visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-              <label class="checkbox__label" for="souvenir">
-                Накупил сувениров
-              </label>
-            </li>
-            <li class="checkbox">
-              <input class="checkbox__control visually-hidden" type="checkbox" name="turret" id="turret" checked>
-              <label class="checkbox__label" for="turret">
-                Удержал башню
-              </label>
-            </li>
-            <li class="checkbox">
-              <input class="checkbox__control visually-hidden" type="checkbox" name="hotel" id="hotel">
-              <label class="checkbox__label" for="hotel">
-                Разгромил отель
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__contacts user-contacts">
-          <legend class="user-contacts__desc">
-            Контактная информация
-          </legend>
-          <div class="contacts">
-            <label class="contacts__label" for="tel">
-              Номер телефона
-            </label>
-            <input class="contacts__control" type="tel" name="tel" id="tel" value="Номер, пожалуйста">
-          </div>
-          <div class="contacts">
-            <label class="contacts__label" for="email">
-              Адрес почты
-            </label>
-            <input class="contacts__control" type="email" name="email" id="email" value="Введите почту *" required>
-          </div>
-        </fieldset>
-        <fieldset class="form__choice user-choice">
-          <legend class="user-choice__desc">
-            С&nbsp;каким приложением путешествовали?
-          </legend>
-          <div class="choice">
-            <input class="choice__control visually-hidden" type="radio" name="choice" id="ios" value="Pink для iOS" checked>
-            <label class="choice__label" for="ios">
-              Pink для iOS
-            </label>
-          </div>
-          <div class="choice">
-            <input class="choice__control visually-hidden" type="radio" name="choice" id="android" value="Pink на Android">
-            <label class="choice__label" for="android">
-              Pink на&nbsp;Android
-            </label>
-          </div>
-          <div class="choice">
-            <input class="choice__control visually-hidden" type="radio" name="choice" id="windows" value="Windows Phone">
-            <label class="choice__label" for="windows">
-              Windows Phone
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="form__comments user-comments">
-          <legend class="user-comments__desc">
-            Опишите свои эмоции
-          </legend>
-          <div class="comment">
-            <textarea class="comment__textarea" name="comment" id="comment-field" rows="6">Можно прям в&nbsp;красках, не стесняясь в&nbsp;выражениях</textarea>
-          </div>
-        </fieldset>
-        <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__importantly">
-          <span class="form__importantly--star">*</span> — обязательные <span class="form__importantly--desc">для заполнения</span> поля
-        </p>
-      </form>
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <a href="index.html" class="footer-container__logo">
+
+<head>
+  <meta charset="utf-8">
+  <title>Конкурс</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__container">
+      <div class="logo-header">
+        <a href="index.html" aria-label="Перейти на главную страницу" class="logo-header__pink">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
           </picture>
         </a>
+        <button class="logo-header__button-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg version="1" xmlns="http://www.w3.org/2000/svg" width="23.9" height="23.9">
+            <path fill="#FFF" d="M15 12l8.6-8.6c.3-.3.3-.8 0-1l-2-2.2a.7.7 0 0 0-1.1 0l-8.6 8.6L3.4.2a.8.8 0 0 0-1 0L.1 2.3c-.3.3-.3.8 0 1L8.8 12 .2 20.5c-.3.3-.3.8 0 1l2.1 2.1a.7.7 0 0 0 1 0l8.6-8.5 8.6 8.5a.7.7 0 0 0 1 0l2.1-2c.3-.3.3-.8 0-1.1l-8.5-8.6z" />
+          </svg>
+        </button>
       </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__twitter button-network" href="#" aria-label="Twitter">
-              <svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" />
-              </svg>
-            </a>
+      <nav class="nav-navigation">
+        <ul class="nav-navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="social__item">
-            <a class="social__facebook button-network" href="#" aria-label="Facebook">
-              <svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944">
-                <path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z" />
-              </svg>
-            </a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="social__item">
-            <a class="social__youtube button-network" href="#" aria-label="YouTube">
-              <svg version="1" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96">
-                <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z" />
-              </svg>
-            </a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
-      </div>
-      <div class="copyright">
-        <p class="copyright__desc">Разработано</p>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2">
-          <svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.9" height="34.1">
-            <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8L25 13.5l-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z" />
-          </svg>
-        </a>
-      </div>
-    </footer>
-  </body>
+      </nav>
+    </div>
+    <section class="page-title">
+      <h1 class="page-title__description">Конкурс на&nbsp;самое безбашенное путешевствие&nbsp;с&nbsp;Пинк</h1>
+    </section>
+  </header>
+  <main class="main-container">
+    <form class="form" method="get" action="https://echo.htmlacademy.ru">
+      <p class="form__desc">
+        Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на вашу бонусную карту! <span class="form__desc--item">Пожалуйста, заполните форму ниже:</span>
+      </p>
+      <fieldset class="form__user user-name">
+        <div class="user">
+          <label class="user__label" for="user-surname">
+            Фамилия:
+          </label>
+          <input class="user__control" type="text" name="surname" id="user-surname" value="Укажите фамилию *" required>
+        </div>
+        <div class="user">
+          <label class="user__label" for="user-name">
+            Имя:
+          </label>
+          <input class="user__control" type="text" name="name" id="user-name" value="Введите ваше имя *" required>
+        </div>
+        <div class="user">
+          <label class="user__label" for="user-patronymic">
+            Отчество:
+          </label>
+          <input class="user__control" type="text" name="patronymic" id="user-patronymic" value="Ну и отчество тоже">
+        </div>
+      </fieldset>
+      <fieldset class="form__feature user-feature">
+        <legend class="user-feature__desc">
+          Ваши безбашенные достижения в&nbsp;путешествии
+        </legend>
+        <ul class="user-feature__list">
+          <li class="checkbox">
+            <input class="checkbox__control visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
+            <label class="checkbox__label" for="selfie">
+              Сделал селфи с&nbsp;акулой
+            </label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox__control visually-hidden" type="checkbox" name="beach" id="beach" checked>
+            <label class="checkbox__label" for="beach">
+              Обгорел на&nbsp;пляже
+            </label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox__control visually-hidden" type="checkbox" name="see" id="see">
+            <label class="checkbox__label" for="see">
+              Видел Чака Норриса
+            </label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox__control visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+            <label class="checkbox__label" for="souvenir">
+              Накупил сувениров
+            </label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox__control visually-hidden" type="checkbox" name="turret" id="turret" checked>
+            <label class="checkbox__label" for="turret">
+              Удержал башню
+            </label>
+          </li>
+          <li class="checkbox">
+            <input class="checkbox__control visually-hidden" type="checkbox" name="hotel" id="hotel">
+            <label class="checkbox__label" for="hotel">
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__contacts user-contacts">
+        <legend class="user-contacts__desc">
+          Контактная информация
+        </legend>
+        <div class="contacts">
+          <label class="contacts__label" for="tel">
+            Номер телефона
+          </label>
+          <input class="contacts__control" type="tel" name="tel" id="tel" value="Номер, пожалуйста">
+        </div>
+        <div class="contacts">
+          <label class="contacts__label" for="email">
+            Адрес почты
+          </label>
+          <input class="contacts__control" type="email" name="email" id="email" value="Введите почту *" required>
+        </div>
+      </fieldset>
+      <fieldset class="form__choice user-choice">
+        <legend class="user-choice__desc">
+          С&nbsp;каким приложением путешествовали?
+        </legend>
+        <div class="choice">
+          <input class="choice__control visually-hidden" type="radio" name="choice" id="ios" value="Pink для iOS" checked>
+          <label class="choice__label" for="ios">
+            Pink для iOS
+          </label>
+        </div>
+        <div class="choice">
+          <input class="choice__control visually-hidden" type="radio" name="choice" id="android" value="Pink на Android">
+          <label class="choice__label" for="android">
+            Pink на&nbsp;Android
+          </label>
+        </div>
+        <div class="choice">
+          <input class="choice__control visually-hidden" type="radio" name="choice" id="windows" value="Windows Phone">
+          <label class="choice__label" for="windows">
+            Windows Phone
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form__comments user-comments">
+        <legend class="user-comments__desc">
+          Опишите свои эмоции
+        </legend>
+        <div class="comment">
+          <textarea class="comment__textarea" name="comment" id="comment-field" rows="6">Можно прям в&nbsp;красках, не стесняясь в&nbsp;выражениях</textarea>
+        </div>
+      </fieldset>
+      <button class="form__button" type="submit">Отправить форму</button>
+      <p class="form__importantly">
+        <span class="form__importantly--star">*</span> — обязательные <span class="form__importantly--desc">для заполнения</span> поля
+      </p>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="index.html" class="footer-container__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+        </picture>
+      </a>
+    </div>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__twitter button-network" href="#" aria-label="Twitter">
+            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__facebook button-network" href="#" aria-label="Facebook">
+            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944">
+              <path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__youtube button-network" href="#" aria-label="YouTube">
+            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96">
+              <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p class="copyright__desc">Разработано</p>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 2">
+        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.9" height="34.1">
+          <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8L25 13.5l-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -7,8 +7,10 @@
 }
 
 .logo-header__button-close {
+  display: none;
   width: 25px;
   height: 25px;
+  padding: 0;
   margin-left: auto;
   border: none;
   background-color: @bg-darkgrey;
@@ -17,6 +19,11 @@
 @media (min-width: @tablet-width) {
   .logo-header {
     padding: 29px 20px 32px;
+  }
+
+  .logo-header__button-close {
+    display: none;
+    margin-top: 15px;
   }
 }
 
