@@ -28,6 +28,14 @@
     url("../img/bg-triangle-white.svg") center top no-repeat;
   background-size: 157px 320px, 100% auto;
   background-color: @bg-lightgrey;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background:
+      url("../img/iphone-screen-mobile@2x.png") center bottom no-repeat,
+      url("../img/bg-triangle-white.svg") center top no-repeat;
+    background-size: 157px 320px, 100% auto;
+    background-color: @bg-lightgrey;
+  }
 }
 
 .advantages__title {
@@ -80,6 +88,11 @@
     text-align: left;
     background: url("../img/iphone-screen-3-tablet@1x.png") 21px bottom no-repeat;
     background-size: 268px 481px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/iphone-screen-3-tablet@2x.png") 21px bottom no-repeat;
+      background-size: 268px 481px;
+    }
   }
 
   .advantages__title {
@@ -119,17 +132,25 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 960px;
     justify-content: center;
     padding-left: 0;
     padding-bottom: 20px;
     padding-top: 355px;
     text-align: center;
     background:
-      url("../img/iphone-screen-1-desktop@1x.png") 134px 0 no-repeat,
-      url("../img/iphone-screen-2-desktop@1x.png") 457px 0 no-repeat,
-      url("../img/iphone-screen-3-desktop@1x.png") 777px 0 no-repeat;
+      url("../img/iphone-screen-1-desktop@1x.png") 14px 0 no-repeat,
+      url("../img/iphone-screen-2-desktop@1x.png") 337px 0 no-repeat,
+      url("../img/iphone-screen-3-desktop@1x.png") 657px 0 no-repeat;
     background-size: 292px 300px, 292px 300px, 292px 300px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background:
+        url("../img/iphone-screen-1-desktop@2x.png") 14px 0 no-repeat,
+        url("../img/iphone-screen-2-desktop@2x.png") 337px 0 no-repeat,
+        url("../img/iphone-screen-3-desktop@2x.png") 657px 0 no-repeat;
+      background-size: 292px 300px, 292px 300px, 292px 300px;
+    }
   }
 
   .advantages__title {

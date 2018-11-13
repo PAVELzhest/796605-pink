@@ -6,6 +6,7 @@
   <title>Фотографии</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
       <div class="logo-header">
         <a href="index.html" aria-label="Перейти на главную страницу" class="logo-header__pink">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
           </picture>
@@ -59,9 +60,9 @@
               Панорама дня
             </p>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-              <img class="photo-panorama__img--item" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo-panorama__img--item" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
             </picture>
           </div>
           <div class="panorama">
@@ -73,9 +74,9 @@
         <li class="photo">
           <div class="photo__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Фото автомобиля">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото автомобиля">
             </picture>
           </div>
           <p class="photo__name">Левон <span class="photo__time">(5 часов назад)</span></p>
@@ -85,9 +86,9 @@
         <li class="photo">
           <div class="photo__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
             </picture>
           </div>
           <p class="photo__name">Антон <span class="photo__time">(12 часов назад)</span></p>
@@ -97,9 +98,9 @@
         <li class="photo">
           <div class="photo__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Вид через панорамную крышу">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Вид через панорамную крышу">
             </picture>
           </div>
           <p class="photo__name">Борис <span class="photo__time">(20 часов назад)</span></p>
@@ -109,9 +110,9 @@
         <li class="photo">
           <div class="photo__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бахча">
             </picture>
           </div>
           <p class="photo__name">Сергей <span class="photo__time">(25 часов назад)</span></p>
@@ -121,9 +122,9 @@
         <li class="photo">
           <div class="photo__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="Фото на вершине горы">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото на вершине горы">
             </picture>
           </div>
           <p class="photo__name">Максим <span class="photo__time">(40 часов назад)</span></p>
@@ -133,9 +134,9 @@
         <li class="photo">
           <div class="photo__wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Вид на крыло самолета через иллюминатор">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Вид на крыло самолета через иллюминатор">
             </picture>
           </div>
           <p class="photo__name">Надежда <span class="photo__time">(45 часов назад)</span></p>
@@ -149,7 +150,7 @@
     <div class="footer-container">
       <a href="index.html" class="footer-container__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
           <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
         </picture>
       </a>
