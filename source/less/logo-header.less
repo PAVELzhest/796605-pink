@@ -1,9 +1,30 @@
 .logo-header {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   border-bottom: 1px solid #000000;
+}
+
+.logo-header__pink {
+  fill: #ffffff;
+}
+
+.logo-header__pink:hover {
+  fill: #d22856;
+}
+
+.logo-header__pink:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.logo-header__pink--tablet {
+  display: none;
+}
+
+.logo-header__pink--desktop {
+  display: none;
 }
 
 .logo-header__button-close {
@@ -21,6 +42,14 @@
     padding: 29px 20px 32px;
   }
 
+  .logo-header__pink--mobile {
+    display: none;
+  }
+
+  .logo-header__pink--tablet {
+    display: inline-block;
+  }
+
   .logo-header__button-close {
     display: none;
     margin-top: 15px;
@@ -33,6 +62,14 @@
     padding: 26px 0 36px;
     justify-content: center;
     border: none;
+  }
+
+  .logo-header__pink--tablet {
+    display: none;
+  }
+
+  .logo-header__pink--desktop {
+    display: inline-block;
   }
 
   .logo-header__button-close {
