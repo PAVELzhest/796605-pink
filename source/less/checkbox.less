@@ -47,13 +47,17 @@
 
 @media (min-width: @tablet-width) {
   .checkbox {
-
     margin-top: 0;
     margin-bottom: 52px;
   }
 
   .checkbox__label {
     margin-left: 118px;
+  }
+
+  .checkbox__label::before {
+    content: "";
+    left: -60px;
   }
 }
 

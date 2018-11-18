@@ -9,18 +9,39 @@
   align-items: center;
 }
 
-.social__twitter {
-  background: url("../img/icon-twitter.svg") center center no-repeat;
+.social__link {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  margin: 0 5px 30px 5px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 50px 50px;
+}
+
+.social__link:focus,
+.social__link:hover {
+  border: 3px solid #283645;
+  outline: none;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
+.social__item:nth-child(1) {
+  background: url("../img/icon-twitter.svg") center 20px no-repeat;
   background-size: 18px 15px;
 }
 
-.social__facebook {
-  background: url("../img/icon-facebook.svg") center center no-repeat;
+.social__item:nth-child(2) {
+  background: url("../img/icon-facebook.svg") center 17px no-repeat;
   background-size: 9px 19px;
 }
 
-.social__youtube {
-  background: url("../img/icon-youtube.svg") center center no-repeat;
+.social__item:nth-child(3) {
+  background: url("../img/icon-youtube.svg") center 20px no-repeat;
   background-size: 15px 14px;
 }
 
@@ -34,6 +55,25 @@
   .social__list {
     justify-content: flex-start;
   }
+
+  .social__link {
+    margin: 0 11px 0 0;
+  }
+
+  .social__item:nth-child(1) {
+    background: url("../img/icon-twitter.svg") 18px 18px no-repeat;
+    background-size: 18px 15px;
+  }
+
+  .social__item:nth-child(2) {
+    background: url("../img/icon-facebook.svg") 22px 15px no-repeat;
+    background-size: 9px 19px;
+  }
+
+  .social__item:nth-child(3) {
+    background: url("../img/icon-youtube.svg") 21px 18px no-repeat;
+    background-size: 15px 14px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -43,5 +83,24 @@
 
   .social__list {
     justify-content: space-between;
+  }
+
+  .social__link {
+    margin: 2px 0 0 0;
+  }
+
+  .social__item:nth-child(1) {
+    background: url("../img/icon-twitter.svg") center 20px no-repeat;
+    background-size: 18px 15px;
+  }
+
+  .social__item:nth-child(2) {
+    background: url("../img/icon-facebook.svg") center 17px no-repeat;
+    background-size: 9px 19px;
+  }
+
+  .social__item:nth-child(3) {
+    background: url("../img/icon-youtube.svg") center 20px no-repeat;
+    background-size: 15px 14px;
   }
 }
