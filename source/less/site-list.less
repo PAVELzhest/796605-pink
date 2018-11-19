@@ -19,6 +19,25 @@
   text-transform: uppercase;
 }
 
+.site-list__link:focus,
+.site-list__link:hover {
+  color: #d22856;
+  outline: none;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
+.site-list__item--active {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: default;
+}
+
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
@@ -44,5 +63,20 @@
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
+  }
+
+  .site-list__link:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  .site-list__item--active {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    cursor: default;
+    border-bottom: 2px solid #ffffff;
   }
 }

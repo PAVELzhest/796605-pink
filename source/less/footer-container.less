@@ -5,8 +5,43 @@
   margin-right: auto;
 }
 
+.footer-container__logo--desktop {
+  display: none;
+}
+
+.footer-container__logo {
+  fill: #283645;
+}
+
+.footer-container__logo:hover {
+  fill: #d22856;
+}
+
+.footer-container__logo:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .footer-container {
     margin: 0;
+  }
+
+  .footer-container__logo {
+    margin-top: -4px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-container__logo--mobile {
+    display: none;
+  }
+
+  .footer-container__logo--desktop {
+    display: inline-block;
+  }
+
+  .footer-container__logo {
+    margin-top: 0;
   }
 }
