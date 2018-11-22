@@ -1,0 +1,271 @@
+.price {
+  padding: 90px 20px 46px;
+  background: url("../img/bg-triangle-white.svg") center top no-repeat;
+  background-size: 100% auto;
+  background-color: @bg-lightgrey;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-triangle-white.svg") center top no-repeat;
+    background-size: 100% auto;
+    background-color: @bg-lightgrey;
+  }
+}
+
+.price__name {
+  display: none;
+}
+
+.price__item {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.price__title {
+  position: relative;
+  width: 276px;
+  padding: 14px 0 24px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645;
+}
+
+.price__item:nth-child(3) .price__title::before {
+  content: "";
+  background: url("../img/bg-hit.svg") left top no-repeat;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 74px;
+  height: 73px;
+}
+
+.price__item:nth-child(3) .price__title::after {
+  content: "Хит";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 74px;
+  height: 73px;
+  font-size: 14px;
+  font-weight: 400;
+  transform: rotate(-45deg);
+  color: #ffffff;
+
+}
+
+.price__title--amount {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645;
+}
+
+.price__yes {
+  width: 236px;
+  padding: 15px 20px 14px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  background: url("../img/icon-yes.svg") 230px center no-repeat;
+  background-size: 27px 27px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.price__no {
+  width: 236px;
+  padding: 15px 20px 14px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  background: url("../img/icon-no.svg") 228px center no-repeat;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.price__button-wrapper {
+  margin-top: 29px;
+}
+
+.price__desc {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__button {
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 3px;
+  border: none;
+  background-color: #bec2c7;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+}
+.price__button:focus,
+.price__button:hover {
+  background-color: #7e868f;
+  outline: none;
+}
+
+.price__button:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    padding: 88px 0 68px;
+    background-color: @bg-lightgrey;
+  }
+
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .price__name {
+    display: block;
+    width: 150px;
+    margin-top: 77px;
+    border: 1px solid #e5e5e5;
+  }
+
+  .price__name--item {
+    margin: 0;
+    padding: 7px 0 8px 14px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+  }
+
+  .price__item {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .price__title {
+    width: 153px;
+    padding: 12px 0 7px;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .price__item:nth-child(3) .price__title::before {
+    content: "";
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background: url("../img/bg-hit-tablet.svg") left top no-repeat;
+  }
+
+  .price__item:nth-child(3) .price__title::after {
+    content: "Хит";
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+  }
+
+  .price__title--amount {
+    font-size: 18px;
+  }
+
+  .price__yes {
+    width: 153px;
+    padding: 23px 0 22px;
+    margin: 0;
+    background: url("../img/icon-yes.svg") center center no-repeat;
+    background-size: 27px 27px;
+  }
+
+  .price__no {
+    width: 153px;
+    padding: 23px 0 22px;
+    margin: 0;
+    background: url("../img/icon-no.svg") center center no-repeat;
+  }
+
+  .price__button-wrapper {
+    display: none;
+  }
+
+  .price__desc {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    padding: 147px 0 96px;
+    background-color: @bg-lightgrey;
+  }
+
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .price__name {
+    width: 232px;
+    margin-top: 96px;
+  }
+
+  .price__name--item {
+    padding: 14px 0 15px 18px;
+    font-size: 18px;
+  }
+
+
+  .price__title {
+    width: 233px;
+    padding: 14px 0 24px;
+    font-size: 18px;
+  }
+
+  .price__item:nth-child(3) .price__title::before {
+    content: "";
+    left: 0;
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg") left top no-repeat;
+  }
+
+  .price__item:nth-child(3) .price__title::after {
+    content: "Хит";
+    top: 5px;
+    width: 74px;
+    height: 73px;
+  }
+
+  .price__title--amount {
+    font-size: 24px;
+  }
+
+  .price__yes {
+    width: 233px;
+    padding: 30px 0 29px;
+    background: url("../img/icon-yes.svg") center 20px no-repeat;
+    background-size: 27px 27px;
+  }
+
+  .price__no {
+    width: 233px;
+    padding: 30px 0 29px;
+  }
+}

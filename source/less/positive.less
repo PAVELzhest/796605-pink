@@ -1,0 +1,97 @@
+.positive {
+  display: none;
+  width: 320px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.2);
+}
+
+.positive__title {
+  margin: 0;
+  padding: 0 30px;
+  margin-bottom: 27px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.positive__desc {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.positive__button-wrapper {
+  padding: 48px 20px 52px;
+  background-color: @bg-lightgrey;
+}
+
+.positive__button {
+  width: 100%;
+  padding: 17px 50px 16px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px 3px;
+}
+
+.positive__button:focus,
+.positive__button:hover {
+  background-color: #1c9b5e;
+  outline: none;
+}
+
+.positive__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .positive {
+    width: 460px;
+    padding-top: 40px;
+  }
+
+  .positive__title {
+    padding: 0 120px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .positive__desc {
+    padding: 0 70px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .positive__button-wrapper {
+    padding: 40px 80px 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .positive {
+    width: 780px;
+    padding-top: 40px;
+  }
+
+  .positive__title {
+    padding: 0 190px;
+    margin-bottom: 25px;
+  }
+
+  .positive__desc {
+    padding: 0 190px;
+    margin-bottom: 38px;
+  }
+
+  .positive__button-wrapper {
+    padding: 48px 160px 50px;
+    background-color: @bg-lightgrey;
+  }
+}

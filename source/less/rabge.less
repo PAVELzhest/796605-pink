@@ -1,0 +1,72 @@
+.rabge {
+  position: relative;
+}
+
+.rabge__scale {
+  height: 2px;
+  margin-left: -4px;
+  background: #283645;
+}
+
+.rabge__contrast,
+.rabge__fill,
+.rabge__crop,
+.rabge__toggle {
+  position: absolute;
+  top: -6px;
+  left: 189px;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rabge__contrast:active,
+.rabge__fill:active,
+.rabge__crop:active,
+.rabge__toggle:active {
+  background: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .rabge__scale {
+    width: 202px;
+    margin-top: 19.5px;
+  }
+
+  .rabge__crop {
+    top: 13px;
+    left: 142px;
+  }
+
+  .rabge__fill {
+    top: 15px;
+    left: 21px;
+  }
+
+  .rabge__contrast {
+    top: 14px;
+    left: 92px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rabge__scale {
+    width: 288px;
+    margin-top: 19.5px;
+  }
+
+  .rabge__crop {
+    left: 67px;
+  }
+
+  .rabge__fill {
+    left: 243px;
+  }
+
+  .rabge__contrast {
+    left: 156px;
+  }
+}

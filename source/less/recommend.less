@@ -1,0 +1,138 @@
+.recommend__item {
+  position: relative;
+  padding: 42px 20px 40px;
+}
+
+.recommend__name {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.recommend__name--desc {
+  display: none;
+}
+
+.recommend__desc {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.recommend__button {
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 3px;
+  border: none;
+  background-color: #bec2c7;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+.recommend__button:focus,
+.recommend__button:hover {
+  background-color: #7e868f;
+  outline: none;
+}
+
+.recommend__button:active {
+  opacity: 0.3;
+}
+
+.recommend__arrow-left {
+  display: none;
+}
+
+.recommend__arrow-right {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .recommend__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 6px 20px 20px;
+  }
+
+  .recommend__name {
+    margin-bottom: 23px;
+    font-size: 20px;
+  }
+
+  .recommend__name--desc {
+    display: block;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .recommend__desc {
+    margin-bottom: 35px;
+    font-size: 18px;
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommend__item {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 185px 20px 20px;
+    background: url("../img/icon-quotes.svg") center 70px no-repeat;
+  }
+
+  .recommend__name {
+    font-size: 24px;
+  }
+
+  .recommend__name--desc {
+    font-size: 18px;
+  }
+
+  .recommend__desc {
+    width: 680px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    order: -1;
+  }
+  
+  .recommend__button {
+    display: none;
+  }
+  
+  .recommend__arrow-left {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 212px;
+  }
+  .recommend__arrow-right {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 212px;
+  }
+  .recommend__arrow-left,
+  .recommend__arrow-right {
+    fill: #f2f2f2;
+  }
+  
+  .recommend__arrow-left:focus,
+  .recommend__arrow-right:focus,
+  .recommend__arrow-left:hover,
+  .recommend__arrow-right:hover {
+    fill: #b2b7bc;
+  }
+  
+  .recommend__arrow-left:active,
+  .recommend__arrow-right:active {
+    fill: #f1f1f1;
+  }
+}

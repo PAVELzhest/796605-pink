@@ -14,6 +14,12 @@
     <symbol viewBox="0 0 27 34" id="logo-academy">
       <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3h-.2L2 12.1v-9L13.5 2 25 3.1v9zM13.4 6.8L25 13.5l-4.5 2.6-7-4.2v1.4l5.8 3.5-.8.6-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.8 1-1.8 1.2L2 13.6l11.4-6.8zM1.9 15L13.3 22v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.8V17l3.4-2v10l-11.5 6.9-11.6-7v-9.8z" />
     </symbol>
+    <symbol viewBox="0 0 22 42" id="arrow-left">
+      <path d="M2 20.9L21.5 1.4A.8.8 0 0 0 20.3.2l-20 20c-.4.4-.4 1 0 1.3l20 20a.8.8 0 0 0 1.2 0c.3-.4.3-.9 0-1.2L2 20.9z" />
+    </symbol>
+    <symbol viewBox="0 0 22 42" id="arrow-right">
+      <path d="M19.7 20.9L.2 1.4A.8.8 0 0 1 1.4.2l20 20c.4.4.4 1 0 1.3l-20 20a.8.8 0 0 1-1.2 0 .8.8 0 0 1 0-1.2l19.5-19.4z" />
+    </symbol>
   </svg>
   <header class="main-header">
     <div class="main-header__container">
@@ -51,7 +57,7 @@
       <nav class="nav-navigation">
         <ul class="nav-navigation__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item--active">Главная</a>
+            <a class="site-list__link active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фотографии</a>
@@ -127,6 +133,79 @@
           </a>
         </div>
       </div>
+    </section>
+    <section class="recommend">
+      <div class="recommend__item">
+        <h2 class="recommend__name">Николай Петров <span class="recommend__name--desc">25 лет, водитель трамвая</span></h2>
+        <p class="recommend__desc">
+          &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!&raquo;
+        </p>
+        <div class="recommend__button-wrapper">
+          <button class="recommend__button button-active" type="button" aria-label="Кнопка переключения"></button>
+          <button class="recommend__button" type="button" aria-label="Кнопка переключения"></button>
+          <button class="recommend__button" type="button" aria-label="Кнопка переключения"></button>
+          <div class="recommend__arrow-left">
+            <svg class="recommend__arrow-icon" width="22" height="42">
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="recommend__arrow-right">
+            <svg class="recommend__arrow-icon" width="22" height="42">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__list">
+        <div class="price__name">
+          <p class="price__name--item">Розовый фильтр</p>
+          <p class="price__name--item">Смайлики</p>
+          <p class="price__name--item">Комментарии</p>
+        </div>
+        <div class="price__item">
+          <p class="price__title">База <span class="price__title--amount">1,99 USD</span></p>
+          <p class="price__yes"><span class="price__desc">Розовый фильтр</span></p>
+          <p class="price__no"><span class="price__desc">Смайлики</span></p>
+          <p class="price__no"><span class="price__desc">Комментарии</span></p>
+        </div>
+        <div class="price__item">
+          <p class="price__title">Стандарт <span class="price__title--amount">3,99 USD</span></p>
+          <p class="price__yes"><span class="price__desc">Розовый фильтр</span></p>
+          <p class="price__yes"><span class="price__desc">Смайлики</span></p>
+          <p class="price__no"><span class="price__desc">Комментарии</span></p>
+        </div>
+        <div class="price__item">
+          <p class="price__title">Анлим <span class="price__title--amount">9,99 USD</span></p>
+          <p class="price__yes"><span class="price__desc">Розовый фильтр</span></p>
+          <p class="price__yes"><span class="price__desc">Смайлики</span></p>
+          <p class="price__yes"><span class="price__desc">Комментарии</span></p>
+        </div>
+      </div>
+      <div class="price__button-wrapper">
+        <button class="price__button" type="button" aria-label="Кнопка переключения"></button>
+        <button class="price__button button-active" type="button" aria-label="Кнопка переключения"></button>
+        <button class="price__button" type="button" aria-label="Кнопка переключения"></button>
+      </div>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <div class="feedback__contacts">
+        <div class="feedback__tel">
+          <p class="feedback__desc">Звоните:</p>
+          <a class="feedback__link" href="#">+7 (812) 555-66-66</a>
+        </div>
+        <div class="feedback__email">
+          <p class="feedback__desc">Пишите:</p>
+          <a class="feedback__link" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="feedback__address">
+          <p class="feedback__desc">Приезжайте в гости:</p>
+          <a class="feedback__link" href="#">ул. Большая Конюшенная, 19/8</a>
+        </div>
+      </div>
+      <div class="feedback__map"></div>
     </section>
   </main>
   <footer class="footer-index">
